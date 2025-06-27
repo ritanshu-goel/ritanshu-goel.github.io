@@ -43,7 +43,8 @@
   </div>
   <div id="viewDiv"></div>
   <script type="module">
-    const [Map, MapView, FeatureLayer, promiseUtils, Graphic, Point, locator, Search, esriRequest, UniqueValueRenderer] =
+    const [Map, MapView, FeatureLayer, promiseUtils, Graphic, Point, locator, Search, esriRequest, UniqueValueRenderer,
+      LabelClass, Extent, SpatialReference,Home] =
       await $arcgis.import([
         "@arcgis/core/Map.js",
         "@arcgis/core/views/MapView.js",
@@ -54,7 +55,10 @@
         "@arcgis/core/rest/locator.js",
         "@arcgis/core/widgets/Search",
         "@arcgis/core/request",
-        "@arcgis/core/renderers/UniqueValueRenderer.js"
+        "@arcgis/core/renderers/UniqueValueRenderer.js",
+        "@arcgis/core/layers/support/LabelClass.js",
+        "@arcgis/core/geometry/Extent.js", "@arcgis/core/geometry/SpatialReference.js",
+        "@arcgis/core/widgets/Home.js"
       ]);
 
 
@@ -159,7 +163,40 @@
       renderer: renderer,
     });
 
+    //adding label for boundary
+    const boundaryLabelClass = new LabelClass({
+      labelExpressionInfo: { expression: "$feature.Name" },
+      symbol: {
+        type: "text",  // autocasts as new TextSymbol()
+        color: "black",
+        font: { family: "Arial Unicode MS", size: 14, weight: "bold" },
+        haloSize: 5,
+        haloColor: "white"
+      }
+    });
 
+    const boundaryLayer = new FeatureLayer({
+      url: "https://livingatlas.esri.in/server/rest/services/IAB2024/India_Administrative_Boundaries_2024/MapServer/2",
+      definitionExpression: "Name in ('Bengaluru Rural','Bengaluru Urban')",
+      outFields: ["*"],
+      minScale: 0,
+      maxScale: 0,
+      labelingInfo: [boundaryLabelClass],
+      labelsVisible: true,
+      renderer: {
+        type: "simple",
+        symbol: {
+          type: "simple-fill",  // autocasts as new SimpleFillSymbol()
+          color: [71, 71, 71, 0.13],
+          style: "solid",
+          outline: {  // autocasts as new SimpleLineSymbol()
+            color: [133, 133, 133, 0.45],
+            width: 2
+          }
+        }
+
+      }
+    });
     // Map Creation
     const map = new Map({
       basemap: "streets-navigation-vector"
@@ -169,16 +206,24 @@
     const view = new MapView({
       container: "viewDiv",
       map: map,
-      center: [77.5946, 12.9716], // Bengaluru coordinates
-      zoom: 12
+      //center: [77.5946, 12.9716], // Bengaluru coordinates
+      zoom: 12,
+      extent: new Extent({
+        "xmin": 8510817.988905743,
+        "ymin": 1412108.4873482152,
+        "xmax": 8745632.53979769,
+        "ymax": 1523706.5486445185,
+        spatialReference: new SpatialReference({ wkid: 3857 })
+      })
     });
 
 
     //adding feature layer on map.
     map.add(publicServicesLayer);
+    map.add(boundaryLayer);
 
     // Filter functionality
-    document.getElementById("typeFilter").addEventListener("change", function (e) {
+    document.getElementById("typeFilter").addEventListener("change", (e) => {
       const selectedType = e.target.value;
       if (selectedType === "All") {
         //used definitionExpression to update symbol- it works as sql where clause.
@@ -187,6 +232,11 @@
         publicServicesLayer.definitionExpression = `Type = '${selectedType}'`;
       }
     });
+
+    //Home Widget
+      let homeWidget = new Home({
+        view: view
+      });
 
     // Search widget
     const searchWidget = new Search({
@@ -206,6 +256,7 @@
     view.ui.add(searchWidget, {
       position: "top-right"
     });
+    view.ui.add(homeWidget,{position:"top-left"});
   </script>
 
 </body>
