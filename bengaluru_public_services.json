@@ -1,0 +1,242 @@
+[
+  {
+    "Objectid": 1,
+    "Name": "Kendriya Vidyalaya",
+    "Type": "School",
+    "Latitude": 12.992527,
+    "Longitude": 77.692579,
+    "CustomMessage": "Kendriya Vidyalaya is a key school serving the local community."
+  },
+  {
+    "Objectid": 2,
+    "Name": "Traffic Police Station",
+    "Type": "Police Station",
+    "Latitude": 12.973788,
+    "Longitude": 77.540816,
+    "CustomMessage": "Traffic Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 3,
+    "Name": "Traffic Police Station",
+    "Type": "Police Station",
+    "Latitude": 13.021273,
+    "Longitude": 77.594815,
+    "CustomMessage": "Traffic Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 4,
+    "Name": "Women Police Station",
+    "Type": "Police Station",
+    "Latitude": 13.045953,
+    "Longitude": 77.632561,
+    "CustomMessage": "Women Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 5,
+    "Name": "Traffic Police Station",
+    "Type": "Police Station",
+    "Latitude": 12.964386,
+    "Longitude": 77.55071,
+    "CustomMessage": "Traffic Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 6,
+    "Name": "Women Police Station",
+    "Type": "Police Station",
+    "Latitude": 12.981356,
+    "Longitude": 77.583716,
+    "CustomMessage": "Women Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 7,
+    "Name": "Cyber Crime Unit",
+    "Type": "Police Station",
+    "Latitude": 12.927604,
+    "Longitude": 77.663557,
+    "CustomMessage": "Cyber Crime Unit is a key police station serving the local community."
+  },
+  {
+    "Objectid": 8,
+    "Name": "Govt General Hospital",
+    "Type": "Hospital",
+    "Latitude": 13.014986,
+    "Longitude": 77.53404,
+    "CustomMessage": "Govt General Hospital is a key hospital serving the local community."
+  },
+  {
+    "Objectid": 9,
+    "Name": "Women Police Station",
+    "Type": "Police Station",
+    "Latitude": 13.04654,
+    "Longitude": 77.584555,
+    "CustomMessage": "Women Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 10,
+    "Name": "District Hospital",
+    "Type": "Hospital",
+    "Latitude": 13.026535,
+    "Longitude": 77.54654,
+    "CustomMessage": "District Hospital is a key hospital serving the local community."
+  },
+  {
+    "Objectid": 11,
+    "Name": "District Hospital",
+    "Type": "Hospital",
+    "Latitude": 13.031928,
+    "Longitude": 77.685417,
+    "CustomMessage": "District Hospital is a key hospital serving the local community."
+  },
+  {
+    "Objectid": 12,
+    "Name": "Women Police Station",
+    "Type": "Police Station",
+    "Latitude": 12.996882,
+    "Longitude": 77.623794,
+    "CustomMessage": "Women Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 13,
+    "Name": "Govt General Hospital",
+    "Type": "Hospital",
+    "Latitude": 12.916175,
+    "Longitude": 77.503362,
+    "CustomMessage": "Govt General Hospital is a key hospital serving the local community."
+  },
+  {
+    "Objectid": 14,
+    "Name": "Municipal Primary School",
+    "Type": "School",
+    "Latitude": 13.009273,
+    "Longitude": 77.540713,
+    "CustomMessage": "Municipal Primary School is a key school serving the local community."
+  },
+  {
+    "Objectid": 15,
+    "Name": "Traffic Police Station",
+    "Type": "Police Station",
+    "Latitude": 13.039247,
+    "Longitude": 77.65512,
+    "CustomMessage": "Traffic Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 16,
+    "Name": "Central Police Station",
+    "Type": "Police Station",
+    "Latitude": 12.927812,
+    "Longitude": 77.618445,
+    "CustomMessage": "Central Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 17,
+    "Name": "Kendriya Vidyalaya",
+    "Type": "School",
+    "Latitude": 12.909503,
+    "Longitude": 77.568422,
+    "CustomMessage": "Kendriya Vidyalaya is a key school serving the local community."
+  },
+  {
+    "Objectid": 18,
+    "Name": "Govt PU College",
+    "Type": "School",
+    "Latitude": 12.90248,
+    "Longitude": 77.535913,
+    "CustomMessage": "Govt PU College is a key school serving the local community."
+  },
+  {
+    "Objectid": 19,
+    "Name": "District Hospital",
+    "Type": "Hospital",
+    "Latitude": 13.022134,
+    "Longitude": 77.579341,
+    "CustomMessage": "District Hospital is a key hospital serving the local community."
+  },
+  {
+    "Objectid": 20,
+    "Name": "District Hospital",
+    "Type": "Hospital",
+    "Latitude": 13.013147,
+    "Longitude": 77.566574,
+    "CustomMessage": "District Hospital is a key hospital serving the local community."
+  },
+  {
+    "Objectid": 21,
+    "Name": "Primary Health Center",
+    "Type": "Hospital",
+    "Latitude": 12.914017,
+    "Longitude": 77.647212,
+    "CustomMessage": "Primary Health Center is a key hospital serving the local community."
+  },
+  {
+    "Objectid": 22,
+    "Name": "District Hospital",
+    "Type": "Hospital",
+    "Latitude": 12.94555,
+    "Longitude": 77.64844,
+    "CustomMessage": "District Hospital is a key hospital serving the local community."
+  },
+  {
+    "Objectid": 23,
+    "Name": "Govt High School",
+    "Type": "School",
+    "Latitude": 13.020142,
+    "Longitude": 77.692182,
+    "CustomMessage": "Govt High School is a key school serving the local community."
+  },
+  {
+    "Objectid": 24,
+    "Name": "Women Police Station",
+    "Type": "Police Station",
+    "Latitude": 13.004205,
+    "Longitude": 77.500281,
+    "CustomMessage": "Women Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 25,
+    "Name": "Women Police Station",
+    "Type": "Police Station",
+    "Latitude": 12.993899,
+    "Longitude": 77.540305,
+    "CustomMessage": "Women Police Station is a key police station serving the local community."
+  },
+  {
+    "Objectid": 26,
+    "Name": "District Hospital",
+    "Type": "Hospital",
+    "Latitude": 13.040819,
+    "Longitude": 77.576835,
+    "CustomMessage": "District Hospital is a key hospital serving the local community."
+  },
+  {
+    "Objectid": 27,
+    "Name": "Kendriya Vidyalaya",
+    "Type": "School",
+    "Latitude": 13.010518,
+    "Longitude": 77.654317,
+    "CustomMessage": "Kendriya Vidyalaya is a key school serving the local community."
+  },
+  {
+    "Objectid": 28,
+    "Name": "Govt High School",
+    "Type": "School",
+    "Latitude": 13.024417,
+    "Longitude": 77.656955,
+    "CustomMessage": "Govt High School is a key school serving the local community."
+  },
+  {
+    "Objectid": 29,
+    "Name": "ESI Hospital",
+    "Type": "Hospital",
+    "Latitude": 13.045396,
+    "Longitude": 77.522362,
+    "CustomMessage": "ESI Hospital is a key hospital serving the local community."
+  },
+  {
+    "Objectid": 30,
+    "Name": "Cyber Crime Unit",
+    "Type": "Police Station",
+    "Latitude": 13.034208,
+    "Longitude": 77.587464,
+    "CustomMessage": "Cyber Crime Unit is a key police station serving the local community."
+  }
+]
