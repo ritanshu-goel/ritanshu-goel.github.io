@@ -41,93 +41,145 @@
     </select>
   </div>
   <div id="viewDiv"></div>
+  <script type="module">
+    const [Map, MapView, FeatureLayer, promiseUtils, Graphic, Point, locator, Search, esriRequest] =
+      await $arcgis.import([
+        "@arcgis/core/Map.js",
+        "@arcgis/core/views/MapView.js",
+        "@arcgis/core/layers/FeatureLayer.js",
+        "@arcgis/core/core/promiseUtils.js",
+        "@arcgis/core/Graphic.js",
+        "@arcgis/core/geometry/Point.js",
+        "@arcgis/core/rest/locator.js",
+        "@arcgis/core/widgets/Search",
+        "@arcgis/core/request",
+      ]);
 
-  <script>
-    require([
-      "esri/Map",
-      "esri/views/MapView",
-      "esri/layers/FeatureLayer",
-      "esri/widgets/Search",
-      // "esri/request",
-      // "./bengaluru_public_services.json"
-    ], (Map, MapView, FeatureLayer, Search) => {
-    //esriRequest,jsonText) => {
+
+    var response = await esriRequest("./bengaluru_public_services.json", {
+      responseType: "json"
+    })
+    var jsonData = response.data;
+    console.log("Loaded JSON via HTTP:", jsonData);
+
+    var graphics = [];
+
+    for (let i = 0; i < jsonData.length; i++) {
+      graphics.push(new Graphic({
+        geometry: new Point({
+          x: jsonData[i].Longitude,
+          y: jsonData[i].Latitude,
+          spatialReference: { wkid: 4326 },
+        }),
+        attributes: jsonData[i],
+      }));
+    }
 
 
-      // esriRequest("./bengaluru_public_services.json", {
-      //   responseType: "json"
-      // }).then(function (response) {
-      //   var jsonData = response.data;
-      //   console.log("Loaded JSON via HTTP:", jsonData);
-      // });
+    const fields = [
+      {
+        name: "Objectid",
+        alias: "Objectid",
+        type: "oid",
+      },
+      {
+        name: "Name",
+        alias: "Name",
+        type: "string",
+      },
+        {
+        name: "Type",
+        alias: "Type",
+        type: "string",
+      },
+      {
+        name: "Latitude",
+        alias: "Latitude",
+        type: "double",
+      },
+      {
+        name: "Longitude",
+        alias: "Longitude",
+        type: "double",
+      },
+      {
+        name: "CustomMessage",
+        alias: "Message",
+        type: "string",
+      },
+    ];
 
-      // async function fetchCSV(url) {
-      //       try {
-      //           const response = await fetch(url);
-      //           const data = await response.json();
-      //           document.getElementById('output').innerText = data;
-      //       } catch (error) {
-      //           console.error('Error fetching CSV:', error);
-      //       }
-      //   }
 
-      // fetchCSV('./bengaluru_public_services.csv');
-
-      const map = new Map({
-        basemap: "streets-navigation-vector"
-      });
-
-      const view = new MapView({
-        container: "viewDiv",
-        map: map,
-        center: [77.5946, 12.9716], // Bengaluru coordinates
-        zoom: 12
-      });
-
-      // Feature Layer for public services
-      const publicServicesLayer = new FeatureLayer({
-        url: "https://services.arcgis.com/your-service-url/arcgis/rest/services/Bengaluru_Public_Services/FeatureServer/0",
-        outFields: ["Name", "Type", "CustomMessage"],
-        popupTemplate: {
-          title: "{Name}",
-          content: `
+    // Create the FeatureLayer
+    const publicServicesLayer = new FeatureLayer({
+      source: graphics,
+      objectIdField: "objectid",
+      fields: fields,
+      outFields: ["*"],
+      popupTemplate: {
+        title: "{Name}",
+        content: `
               <b>Type:</b> {Type}<br>
               <b>Note:</b> {CustomMessage}
             `
-        }
-      });
+      },
+      geometryType: "point",
+      renderer: {
+        type: "simple",
+        symbol: {
+          type: "simple-marker",
+          color: "red",
+          size: "8px",
+        },
+      },
+    });
 
-      map.add(publicServicesLayer);
 
-      // Filter functionality
-      document.getElementById("typeFilter").addEventListener("change", function (e) {
-        const selectedType = e.target.value;
-        if (selectedType === "All") {
-          publicServicesLayer.definitionExpression = "";
-        } else {
-          publicServicesLayer.definitionExpression = `Type = '${selectedType}'`;
-        }
-      });
 
-      // Search widget
-      const searchWidget = new Search({
-        view: view,
-        sources: [{
-          layer: publicServicesLayer,
-          searchFields: ["Name"],
-          displayField: "Name",
-          exactMatch: false,
-          outFields: ["Name", "Type", "CustomMessage"],
-          name: "Public Services",
-          placeholder: "Search by name"
-        }]
-      });
+    const map = new Map({
+      basemap: "streets-navigation-vector"
+    });
 
-      view.ui.add(searchWidget, {
-        position: "top-right"
-      });
+    const view = new MapView({
+      container: "viewDiv",
+      map: map,
+      center: [77.5946, 12.9716], // Bengaluru coordinates
+      zoom: 12
+    });
+
+
+
+    map.add(publicServicesLayer);
+
+    // Filter functionality
+    document.getElementById("typeFilter").addEventListener("change", function (e) {
+      const selectedType = e.target.value;
+      if (selectedType === "All") {
+        publicServicesLayer.definitionExpression = "";
+      } else {
+        publicServicesLayer.definitionExpression = `Type = '${selectedType}'`;
+      }
+    });
+
+    // Search widget
+    const searchWidget = new Search({
+      view: view,
+      sources: [{
+        layer: publicServicesLayer,
+        searchFields: ["Name"],
+        displayField: "Name",
+        exactMatch: false,
+        outFields: ["Name", "Type", "CustomMessage"],
+        name: "Public Services",
+        placeholder: "Search by name"
+      }]
+    });
+
+    view.ui.add(searchWidget, {
+      position: "top-right"
     });
   </script>
+
 </body>
 
 </html>
