@@ -42,7 +42,7 @@
   </div>
   <div id="viewDiv"></div>
   <script type="module">
-    const [Map, MapView, FeatureLayer, promiseUtils, Graphic, Point, locator, Search, esriRequest] =
+    const [Map, MapView, FeatureLayer, promiseUtils, Graphic, Point, locator, Search, esriRequest, UniqueValueRenderer] =
       await $arcgis.import([
         "@arcgis/core/Map.js",
         "@arcgis/core/views/MapView.js",
@@ -53,6 +53,7 @@
         "@arcgis/core/rest/locator.js",
         "@arcgis/core/widgets/Search",
         "@arcgis/core/request",
+        "@arcgis/core/renderers/UniqueValueRenderer.js"
       ]);
 
 
@@ -87,7 +88,7 @@
         alias: "Name",
         type: "string",
       },
-        {
+      {
         name: "Type",
         alias: "Type",
         type: "string",
@@ -109,7 +110,36 @@
       },
     ];
 
-
+    var renderer = {
+      type: "unique-value",
+      field: "Type",
+      defaultSymbol: { type: "picture-marker" },  // autocasts as new PicturemarkerSymbol()
+      uniqueValueInfos: [{
+        value: "School",
+        symbol: {
+          type: "picture-marker",
+          url: "./icons/school.svg",
+          width: "40px",
+          height: "40px"
+        }
+      }, {
+        value: "Police Station",
+        symbol: {
+          type: "picture-marker",
+          url: "./icons/police.svg",
+          width: "40px",
+          height: "40px"
+        }
+      }, {
+        value: "Hospital",
+        symbol: {
+          type: "picture-marker",
+          url: "./icons/hospital.svg",
+          width: "40px",
+          height: "40px"
+        }
+      }]
+    };
     // Create the FeatureLayer
     const publicServicesLayer = new FeatureLayer({
       source: graphics,
@@ -124,14 +154,7 @@
             `
       },
       geometryType: "point",
-      renderer: {
-        type: "simple",
-        symbol: {
-          type: "simple-marker",
-          color: "red",
-          size: "8px",
-        },
-      },
+      renderer: renderer,
     });
 
 

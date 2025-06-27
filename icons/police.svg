@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths">
+   <g>
+      <path fill="#fa4b4b" d="M53 24.267C53 42.633 32 61 32 61S11 42.633 11 24.267a21 21 0 1 1 42 0z" opacity="1" data-original="#fa4b4b" class=""></path>
+      <path fill="#dc3c46" d="M19.625 46.953A86.778 86.778 0 0 0 32 61s17.6-15.4 20.567-32.1c-8.144 9.04-20.061 15.6-32.942 18.053z" opacity="1" data-original="#dc3c46"></path>
+      <circle cx="32" cy="24" r="17" fill="#eeeeee" opacity="1" data-original="#eeeeee" class=""></circle>
+      <path fill="#ad2a37" d="M32 12c-3 2-9 3-9 3v10.755C23 30.6 26.71 34.824 32 36c5.288-1.176 9-5.4 9-10.245V15s-6-1-9-3zm3.09 15.511L32 25.886l-3.09 1.625.59-3.441-2.5-2.437 3.455-.5L32 18l1.545 3.131 3.455.5-2.5 2.439z" opacity="1" data-original="#ad2a37" class="hovered-path"></path>
+   </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+   <g>
+      <path fill="#fa4b4b" d="M53 24.267C53 42.633 32 61 32 61S11 42.633 11 24.267a21 21 0 1 1 42 0z" opacity="1" data-original="#fa4b4b"></path>
+      <path fill="#dc3c46" d="M19.625 46.953A86.778 86.778 0 0 0 32 61s17.6-15.4 20.567-32.1c-8.144 9.04-20.061 15.6-32.942 18.053z" opacity="1" data-original="#dc3c46"></path>
+      <circle cx="32" cy="24" r="17" fill="#eeeeee" opacity="1" data-original="#eeeeee"></circle>
+      <path fill="#ad2a37" d="M29 21v-8h6v8h8v6h-8v8h-6v-8h-8v-6z" opacity="1" data-original="#ad2a37" class=""></path>
+   </g>
+</svg>
