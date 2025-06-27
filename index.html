@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Bengaluru Public Services Map</title>
+  <!-- Added esri javascript libraries-->
   <link rel="stylesheet" href="https://js.arcgis.com/4.33/esri/themes/light/main.css" />
   <script src="https://js.arcgis.com/4.33/"> </script>
 
@@ -110,6 +111,7 @@
       },
     ];
 
+    //unique value renderer used to categorize symbols.
     var renderer = {
       type: "unique-value",
       field: "Type",
@@ -158,11 +160,12 @@
     });
 
 
-
+    // Map Creation
     const map = new Map({
       basemap: "streets-navigation-vector"
     });
 
+    // map object injected to mapview to display at particular container location/div
     const view = new MapView({
       container: "viewDiv",
       map: map,
@@ -171,13 +174,14 @@
     });
 
 
-
+    //adding feature layer on map.
     map.add(publicServicesLayer);
 
     // Filter functionality
     document.getElementById("typeFilter").addEventListener("change", function (e) {
       const selectedType = e.target.value;
       if (selectedType === "All") {
+        //used definitionExpression to update symbol- it works as sql where clause.
         publicServicesLayer.definitionExpression = "";
       } else {
         publicServicesLayer.definitionExpression = `Type = '${selectedType}'`;
@@ -188,16 +192,17 @@
     const searchWidget = new Search({
       view: view,
       sources: [{
-        layer: publicServicesLayer,
+        layer: publicServicesLayer, // Passed feature service as a source
         searchFields: ["Name"],
         displayField: "Name",
         exactMatch: false,
         outFields: ["Name", "Type", "CustomMessage"],
         name: "Public Services",
-        placeholder: "Search by name"
+        placeholder: "Search by name",
+        minSuggestCharacters: 1
       }]
     });
-
+    // added on map
     view.ui.add(searchWidget, {
       position: "top-right"
     });
