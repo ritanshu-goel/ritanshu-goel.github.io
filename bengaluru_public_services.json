@@ -1,7 +1,7 @@
 [
   {
     "Objectid": 1,
-    "Name": "Kendriya Vidyalaya",
+    "Name": "Kendriya Vidyalaya - 1",
     "Type": "School",
     "Latitude": 12.992527,
     "Longitude": 77.692579,
@@ -9,7 +9,7 @@
   },
   {
     "Objectid": 2,
-    "Name": "Traffic Police Station",
+    "Name": "Traffic Police Station - 1",
     "Type": "Police Station",
     "Latitude": 12.973788,
     "Longitude": 77.540816,
@@ -17,7 +17,7 @@
   },
   {
     "Objectid": 3,
-    "Name": "Traffic Police Station",
+    "Name": "Traffic Police Station - 2",
     "Type": "Police Station",
     "Latitude": 13.021273,
     "Longitude": 77.594815,
@@ -25,7 +25,7 @@
   },
   {
     "Objectid": 4,
-    "Name": "Women Police Station",
+    "Name": "Women Police Station - 1",
     "Type": "Police Station",
     "Latitude": 13.045953,
     "Longitude": 77.632561,
@@ -33,7 +33,7 @@
   },
   {
     "Objectid": 5,
-    "Name": "Traffic Police Station",
+    "Name": "Traffic Police Station - 3",
     "Type": "Police Station",
     "Latitude": 12.964386,
     "Longitude": 77.55071,
@@ -41,7 +41,7 @@
   },
   {
     "Objectid": 6,
-    "Name": "Women Police Station",
+    "Name": "Women Police Station  - 2",
     "Type": "Police Station",
     "Latitude": 12.981356,
     "Longitude": 77.583716,
@@ -49,7 +49,7 @@
   },
   {
     "Objectid": 7,
-    "Name": "Cyber Crime Unit",
+    "Name": "Cyber Crime Unit - 1",
     "Type": "Police Station",
     "Latitude": 12.927604,
     "Longitude": 77.663557,
@@ -57,7 +57,7 @@
   },
   {
     "Objectid": 8,
-    "Name": "Govt General Hospital",
+    "Name": "Govt General Hospital - 1",
     "Type": "Hospital",
     "Latitude": 13.014986,
     "Longitude": 77.53404,
@@ -65,7 +65,7 @@
   },
   {
     "Objectid": 9,
-    "Name": "Women Police Station",
+    "Name": "Women Police Station - 3",
     "Type": "Police Station",
     "Latitude": 13.04654,
     "Longitude": 77.584555,
@@ -73,7 +73,7 @@
   },
   {
     "Objectid": 10,
-    "Name": "District Hospital",
+    "Name": "District Hospital - 1",
     "Type": "Hospital",
     "Latitude": 13.026535,
     "Longitude": 77.54654,
@@ -81,7 +81,7 @@
   },
   {
     "Objectid": 11,
-    "Name": "District Hospital",
+    "Name": "District Hospital - 2",
     "Type": "Hospital",
     "Latitude": 13.031928,
     "Longitude": 77.685417,
@@ -89,7 +89,7 @@
   },
   {
     "Objectid": 12,
-    "Name": "Women Police Station",
+    "Name": "Women Police Station - 4",
     "Type": "Police Station",
     "Latitude": 12.996882,
     "Longitude": 77.623794,
@@ -97,7 +97,7 @@
   },
   {
     "Objectid": 13,
-    "Name": "Govt General Hospital",
+    "Name": "Govt General Hospital - 2",
     "Type": "Hospital",
     "Latitude": 12.916175,
     "Longitude": 77.503362,
@@ -113,7 +113,7 @@
   },
   {
     "Objectid": 15,
-    "Name": "Traffic Police Station",
+    "Name": "Traffic Police Station - 4",
     "Type": "Police Station",
     "Latitude": 13.039247,
     "Longitude": 77.65512,
@@ -129,7 +129,7 @@
   },
   {
     "Objectid": 17,
-    "Name": "Kendriya Vidyalaya",
+    "Name": "Kendriya Vidyalaya - 2",
     "Type": "School",
     "Latitude": 12.909503,
     "Longitude": 77.568422,
@@ -145,7 +145,7 @@
   },
   {
     "Objectid": 19,
-    "Name": "District Hospital",
+    "Name": "District Hospital - 3",
     "Type": "Hospital",
     "Latitude": 13.022134,
     "Longitude": 77.579341,
@@ -153,7 +153,7 @@
   },
   {
     "Objectid": 20,
-    "Name": "District Hospital",
+    "Name": "District Hospital - 4",
     "Type": "Hospital",
     "Latitude": 13.013147,
     "Longitude": 77.566574,
@@ -169,7 +169,7 @@
   },
   {
     "Objectid": 22,
-    "Name": "District Hospital",
+    "Name": "District Hospital - 5",
     "Type": "Hospital",
     "Latitude": 12.94555,
     "Longitude": 77.64844,
@@ -177,7 +177,7 @@
   },
   {
     "Objectid": 23,
-    "Name": "Govt High School",
+    "Name": "Govt High School - 1",
     "Type": "School",
     "Latitude": 13.020142,
     "Longitude": 77.692182,
@@ -185,7 +185,7 @@
   },
   {
     "Objectid": 24,
-    "Name": "Women Police Station",
+    "Name": "Women Police Station - 5",
     "Type": "Police Station",
     "Latitude": 13.004205,
     "Longitude": 77.500281,
@@ -193,7 +193,7 @@
   },
   {
     "Objectid": 25,
-    "Name": "Women Police Station",
+    "Name": "Women Police Station - 6",
     "Type": "Police Station",
     "Latitude": 12.993899,
     "Longitude": 77.540305,
@@ -201,7 +201,7 @@
   },
   {
     "Objectid": 26,
-    "Name": "District Hospital",
+    "Name": "District Hospital - 6",
     "Type": "Hospital",
     "Latitude": 13.040819,
     "Longitude": 77.576835,
@@ -209,7 +209,7 @@
   },
   {
     "Objectid": 27,
-    "Name": "Kendriya Vidyalaya",
+    "Name": "Kendriya Vidyalaya - 3",
     "Type": "School",
     "Latitude": 13.010518,
     "Longitude": 77.654317,
@@ -217,7 +217,7 @@
   },
   {
     "Objectid": 28,
-    "Name": "Govt High School",
+    "Name": "Govt High School  - 2",
     "Type": "School",
     "Latitude": 13.024417,
     "Longitude": 77.656955,
@@ -225,7 +225,7 @@
   },
   {
     "Objectid": 29,
-    "Name": "ESI Hospital",
+    "Name": "ESI Hospital - 1",
     "Type": "Hospital",
     "Latitude": 13.045396,
     "Longitude": 77.522362,
@@ -233,7 +233,7 @@
   },
   {
     "Objectid": 30,
-    "Name": "Cyber Crime Unit",
+    "Name": "Cyber Crime Unit - 2",
     "Type": "Police Station",
     "Latitude": 13.034208,
     "Longitude": 77.587464,

@@ -1,31 +1,31 @@
 Objectid,Name,Type,Latitude,Longitude,CustomMessage
-1,Kendriya Vidyalaya,School,12.992527,77.692579,Kendriya Vidyalaya is a key school serving the local community.
-2,Traffic Police Station,Police Station,12.973788,77.540816,Traffic Police Station is a key police station serving the local community.
-3,Traffic Police Station,Police Station,13.021273,77.594815,Traffic Police Station is a key police station serving the local community.
-4,Women Police Station,Police Station,13.045953,77.632561,Women Police Station is a key police station serving the local community.
-5,Traffic Police Station,Police Station,12.964386,77.55071,Traffic Police Station is a key police station serving the local community.
-6,Women Police Station,Police Station,12.981356,77.583716,Women Police Station is a key police station serving the local community.
-7,Cyber Crime Unit,Police Station,12.927604,77.663557,Cyber Crime Unit is a key police station serving the local community.
-8,Govt General Hospital,Hospital,13.014986,77.53404,Govt General Hospital is a key hospital serving the local community.
-9,Women Police Station,Police Station,13.04654,77.584555,Women Police Station is a key police station serving the local community.
-10,District Hospital,Hospital,13.026535,77.54654,District Hospital is a key hospital serving the local community.
-11,District Hospital,Hospital,13.031928,77.685417,District Hospital is a key hospital serving the local community.
-12,Women Police Station,Police Station,12.996882,77.623794,Women Police Station is a key police station serving the local community.
-13,Govt General Hospital,Hospital,12.916175,77.503362,Govt General Hospital is a key hospital serving the local community.
+1,Kendriya Vidyalaya - 1,School,12.992527,77.692579,Kendriya Vidyalaya is a key school serving the local community.
+2,Traffic Police Station - 1,Police Station,12.973788,77.540816,Traffic Police Station is a key police station serving the local community.
+3,Traffic Police Station - 2,Police Station,13.021273,77.594815,Traffic Police Station is a key police station serving the local community.
+4,Women Police Station - 1,Police Station,13.045953,77.632561,Women Police Station is a key police station serving the local community.
+5,Traffic Police Station - 3,Police Station,12.964386,77.55071,Traffic Police Station is a key police station serving the local community.
+6,Women Police Station  - 2,Police Station,12.981356,77.583716,Women Police Station is a key police station serving the local community.
+7,Cyber Crime Unit - 1,Police Station,12.927604,77.663557,Cyber Crime Unit is a key police station serving the local community.
+8,Govt General Hospital - 1,Hospital,13.014986,77.53404,Govt General Hospital is a key hospital serving the local community.
+9,Women Police Station - 3,Police Station,13.04654,77.584555,Women Police Station is a key police station serving the local community.
+10,District Hospital - 1,Hospital,13.026535,77.54654,District Hospital is a key hospital serving the local community.
+11,District Hospital - 2,Hospital,13.031928,77.685417,District Hospital is a key hospital serving the local community.
+12,Women Police Station - 4,Police Station,12.996882,77.623794,Women Police Station is a key police station serving the local community.
+13,Govt General Hospital - 2,Hospital,12.916175,77.503362,Govt General Hospital is a key hospital serving the local community.
 14,Municipal Primary School,School,13.009273,77.540713,Municipal Primary School is a key school serving the local community.
-15,Traffic Police Station,Police Station,13.039247,77.65512,Traffic Police Station is a key police station serving the local community.
-16,Central Police Station,Police Station,12.927812,77.618445,Central Police Station is a key police station serving the local community.
-17,Kendriya Vidyalaya,School,12.909503,77.568422,Kendriya Vidyalaya is a key school serving the local community.
+15,Traffic Police Station - 4,Police Station,13.039247,77.65512,Traffic Police Station is a key police station serving the local community.
+16,Central Police Station ,Police Station,12.927812,77.618445,Central Police Station is a key police station serving the local community.
+17,Kendriya Vidyalaya - 2,School,12.909503,77.568422,Kendriya Vidyalaya is a key school serving the local community.
 18,Govt PU College,School,12.90248,77.535913,Govt PU College is a key school serving the local community.
-19,District Hospital,Hospital,13.022134,77.579341,District Hospital is a key hospital serving the local community.
-20,District Hospital,Hospital,13.013147,77.566574,District Hospital is a key hospital serving the local community.
+19,District Hospital - 3,Hospital,13.022134,77.579341,District Hospital is a key hospital serving the local community.
+20,District Hospital - 4,Hospital,13.013147,77.566574,District Hospital is a key hospital serving the local community.
 21,Primary Health Center,Hospital,12.914017,77.647212,Primary Health Center is a key hospital serving the local community.
-22,District Hospital,Hospital,12.94555,77.64844,District Hospital is a key hospital serving the local community.
-23,Govt High School,School,13.020142,77.692182,Govt High School is a key school serving the local community.
-24,Women Police Station,Police Station,13.004205,77.500281,Women Police Station is a key police station serving the local community.
-25,Women Police Station,Police Station,12.993899,77.540305,Women Police Station is a key police station serving the local community.
-26,District Hospital,Hospital,13.040819,77.576835,District Hospital is a key hospital serving the local community.
-27,Kendriya Vidyalaya,School,13.010518,77.654317,Kendriya Vidyalaya is a key school serving the local community.
-28,Govt High School,School,13.024417,77.656955,Govt High School is a key school serving the local community.
-29,ESI Hospital,Hospital,13.045396,77.522362,ESI Hospital is a key hospital serving the local community.
-30,Cyber Crime Unit,Police Station,13.034208,77.587464,Cyber Crime Unit is a key police station serving the local community.
+22,District Hospital - 5,Hospital,12.94555,77.64844,District Hospital is a key hospital serving the local community.
+23,Govt High School - 1,School,13.020142,77.692182,Govt High School is a key school serving the local community.
+24,Women Police Station - 5,Police Station,13.004205,77.500281,Women Police Station is a key police station serving the local community.
+25,Women Police Station - 6,Police Station,12.993899,77.540305,Women Police Station is a key police station serving the local community.
+26,District Hospital - 6,Hospital,13.040819,77.576835,District Hospital is a key hospital serving the local community.
+27,Kendriya Vidyalaya - 3,School,13.010518,77.654317,Kendriya Vidyalaya is a key school serving the local community.
+28,Govt High School  - 2,School,13.024417,77.656955,Govt High School is a key school serving the local community.
+29,ESI Hospital - 1,Hospital,13.045396,77.522362,ESI Hospital is a key hospital serving the local community.
+30,Cyber Crime Unit - 2,Police Station,13.034208,77.587464,Cyber Crime Unit is a key police station serving the local community.
